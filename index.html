@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>43-DARS, JS_18</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+
+      <div class="head">
+        <div class="text">
+          <div>
+            Email: <span class="email-text"></span>
+          </div>
+          <div>
+            Password: <span class="password-text"></span>
+          </div>
+
+          <div>
+            Confirm password: <span class="confirm-password-text"></span>
+          </div>
+        </div>
+
+        <button class="open-modal_btn">See Modal with Form</button>
+      </div>
+
+      <div class="modal">
+        <div class="card">
+          <div class="card-title">
+
+            <h3 class="card-title_text">
+              Create Account
+            </h3>
+
+            <button class="close-modal_btn">✕</button>
+          </div>
+
+          <label for="email">Email address:</label>
+          <input type="email" id="email" placeholder="example@mail.com">
+
+          <label for="password">Email password:</label>
+          <input type="password" id="password" placeholder="********">
+
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" placeholder="********">
+
+          <div class="submit-button">
+            <button type="submit" class="submit-btn">Submit</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

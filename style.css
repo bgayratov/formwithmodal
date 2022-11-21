@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+  background-color: lightblue;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  order: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem 3rem;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+span {
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.open-modal_btn,
+.submit-btn {
+  margin: 20px 0;
+  padding: 15px 40px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px 2px rgb(0, 0, 0, .4);
+  font-size: 16px;
+  font-weight: bolder;
+  transition: all .1s ease;
+  cursor: pointer;
+}
+
+.open-modal_btn:hover {
+  background-color: rgb(239, 0, 0);
+}
+
+.open-modal_btn:active,
+.submit-btn:active {
+  transform: scale(.95);
+}
+
+.text {
+  font-size: 22px;
+}
+
+.modal {
+  position: absolute;
+  top: -200%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, .5);
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s ease;
+}
+
+.modal.open {
+  top: 0;
+}
+
+.card {
+  position: absolute;
+  background-color: #fff;
+  padding: 25px;
+  line-height: 300%;
+  border-radius: 9px;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-title_text {
+  font-size: 32px;
+}
+
+.close-modal_btn {
+  background-color: transparent;
+  border: transparent;
+  font-size: 1.2rem;
+  color: #000;
+  cursor: pointer;
+}
+
+
+label,
+input {
+  display: block;
+  font-weight: 600;
+}
+
+input {
+  width: 22rem;
+  padding: 10px 15px;
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  display: block;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  outline: gray;
+}
+
+input:focus {
+  box-shadow: 1px 1px 1px 2px rgba(128, 128, 128, 0.2);
+}
+
+.submit-button {
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: rgb(0, 191, 255);
+}
+
+.submit-btn:hover {
+  background-color: rgb(0, 173, 240);
+}
